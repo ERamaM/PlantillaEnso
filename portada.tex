@@ -1,0 +1,16 @@
+%Los valores van a pelo, aunque seguramente hay una forma mejor de hacer esto.
+\newcommand{\portada}{\begingroup
+  \begin{center}
+  \vspace*{4cm} %Espacio desde arriba
+  {\Huge \textsc{\nombremateria} \\ \par} %Ponemos textsc para que este en mayusculas \\ \par para hacer el salto de linea
+  \vspace{1cm} %Espacio entre elementos
+  {\Huge \textsc{\titulopractica} \\ \par}
+  \vspace{1cm}
+  {\Huge \textsc{\entregable} \\ \par}
+  \vspace*{8cm} %Un espacio potente hasta el final
+  \end{center}
+  \textsc{Miembros del grupo:} \miembros \\
+  \textsc{Fecha de entrega:} \fecha
+  \fancyfoot{} %Limpiamos
+  \fancyfoot[CE,CO]{\titulopractica} %C: coge el centro de la pagina. E,O paginas even y odd.
+}

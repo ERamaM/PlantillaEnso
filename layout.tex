@@ -1,0 +1,19 @@
+\fancyhead[CE,CO,LE,LO,RE,RO]{} %% clear out all headers
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headsep}{60pt}
+\setlength{\footskip}{50pt}
+\fancyhead[C]{%
+        % \begin{tabular}{|m{3.0cm}|m{7cm}|m{2cm}|} %Ajustar estos valores a mano
+        %           \hline
+        %           ENSO & \multicolumn{2}{|P{9cm}|}{Nombre del documento: \nombredocumento} \\[1.5ex] \hline
+        %           & Pagina \thepage\ de \pageref{LastPage} & Version: \version \\[1ex] \hline %Yo entiendo que la portada y tablas tambien se cuentan
+        %           \multicolumn{3}{c}{} \\[5mm] %ESTO ES UNA CHAPUZA
+        % \end{tabular}
+\begin{tabular}{|c|c|c|l|l|l|}
+\hline
+\multicolumn{2}{|c|}{} & \multicolumn{4}{P{10cm}|}{Nombre documento: \nombredocumento} \\[2ex] \cline{3-6}
+\multicolumn{2}{|c|}{\multirow{-2}{*}{\begin{tabular}[c]{@{}c@{}}EN\\ SO \end{tabular}}} & \multicolumn{3}{P{8cm}|}{Pagina \thepage\ de \pageref{LastPage}} & Version: \version \\[2ex] \hline
+\end{tabular}
+}
+\fancyfoot[C]{k\titulopractica} %Titulo de la practica
+\fancyfoot[R]{a\today} %Ponemos la fecha de hoy
