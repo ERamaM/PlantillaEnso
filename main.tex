@@ -1,4 +1,4 @@
-\input{includes.tex} %Archivos para que esto rule
+\input{./lib/includes.tex} %Archivos para que esto rule
 % A EDITAR
 \newcommand{\nombremateria}{Ingeniería del software}
 \newcommand{\titulopractica}{Práctica 1}
@@ -8,9 +8,8 @@
 \newcommand{\nombredocumento}{Nombre\_Documento\_v1.0.tex}
 \newcommand{\version}{1.0}
 %%%%%%%%%%
-\input{portada.tex} %La portada
-\input{control.tex} %Control de versiones. Habilita \control
-\input{configs.tex}
+\input{./lib/portada.tex} %La portada
+\input{./lib/configs.tex}
 \begin{document}
 \portada
 \newpage
@@ -49,28 +48,16 @@
 \fancyfoot{} %Limpiamos pie de pagina
 \fancyfoot[CE,CO]{\titulopractica} %Ponemos el titulo de la practica
 \clearpage %En otro caso no salta
-\input{layout.tex} %Ponemos la cabecera en todas las paginas
+\input{./lib/layout.tex} %Ponemos la cabecera en todas las paginas
 \tableofcontents
 \newpage
-\section{You are an idiot}
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pharetra ligula at purus tempus, non auctor orci placerat. Suspendisse a congue ipsum, eu mattis lacus. Donec vitae ultrices velit. Mauris vulputate iaculis lacinia. Donec ac efficitur elit. Phasellus porta scelerisque placerat. Morbi ac massa euismod, imperdiet augue eu, auctor risus. Aliquam suscipit risus tortor, nec vulputate erat convallis id. Suspendisse molestie sem eget magna porta malesuada. Donec egestas vel erat vitae tristique. Sed vestibulum rutrum erat et laoreet. Integer sit amet suscipit nisi, eu commodo eros. Aliquam a lectus sed risus molestie dictum sit amet in nisl. Aliquam auctor a odio in dictum. Pellentesque ac ante ac diam sodales sagittis id ac ipsum.
-
-Curabitur rhoncus mauris ut felis sagittis dictum. Quisque nec dui tincidunt, varius est at, molestie arcu. Pellentesque quis lectus eu enim mollis mollis. Sed elementum ex vel ex euismod rutrum. Quisque tempor sed tellus id laoreet. Proin fringilla mauris odio, ac condimentum neque lobortis ac. Sed id neque viverra, porta eros a, fermentum metus. Vivamus euismod vitae nulla vitae malesuada. Proin in neque nec lectus dapibus vestibulum. Nam nisi justo, vestibulum ut lectus sed, maximus auctor turpis. Duis vulputate eget augue at aliquet. Sed gravida maximus luctus. Mauris sed facilisis neque. Nullam enim metus, mattis a libero quis, ullamcorper posuere mauris.
-
-In at metus sodales, sagittis mauris sed, vehicula massa. Quisque in diam posuere, aliquam mi id, semper est. Phasellus tristique, massa vel posuere congue, est augue ullamcorper est, at porttitor lorem augue eget ante. Morbi magna justo, viverra vel tellus vel, blandit fringilla orci. Sed non dignissim augue, nec dapibus purus. Praesent cursus ornare risus, placerat aliquet neque. Ut in gravida metus, vitae vestibulum arcu. Vivamus fermentum eget urna quis porta. Cras commodo sodales ante, et sagittis massa. Nullam pulvinar tortor libero, eget faucibus urna posuere eget.
-
-Fusce condimentum tristique augue, eu iaculis justo venenatis in. Maecenas efficitur urna nec finibus auctor. Aenean at mauris arcu. Curabitur faucibus nec dolor vitae mollis. Nulla ut metus leo. Etiam finibus eros nec magna porttitor, eu cursus nulla semper. Aliquam mi felis, laoreet non metus sed, vehicula tincidunt justo. Cras ut suscipit justo. Mauris cursus augue vel quam tristique aliquam. Proin rutrum eros arcu, at pretium justo tincidunt placerat. Mauris sed pulvinar leo. Sed aliquam pretium dolor finibus luctus.
-
-Curabitur rhoncus mauris ut felis sagittis dictum. Quisque nec dui tincidunt, varius est at, molestie arcu. Pellentesque quis lectus eu enim mollis mollis. Sed elementum ex vel ex euismod rutrum. Quisque tempor sed tellus id laoreet. Proin fringilla mauris odio, ac condimentum neque lobortis ac. Sed id neque viverra, porta eros a, fermentum metus. Vivamus euismod vitae nulla vitae malesuada. Proin in neque nec lectus dapibus vestibulum. Nam nisi justo, vestibulum ut lectus sed, maximus auctor turpis. Duis vulputate eget augue at aliquet. Sed gravida maximus luctus. Mauris sed facilisis neque. Nullam enim metus, mattis a libero quis, ullamcorper posuere mauris.
-
-In at metus sodales, sagittis mauris sed, vehicula massa. Quisque in diam posuere, aliquam mi id, semper est. Phasellus tristique, massa vel posuere congue, est augue ullamcorper est, at porttitor lorem augue eget ante. Morbi magna justo, viverra vel tellus vel, blandit fringilla orci. Sed non dignissim augue, nec dapibus purus. Praesent cursus ornare risus, placerat aliquet neque. Ut in gravida metus, vitae vestibulum arcu. Vivamus fermentum eget urna quis porta. Cras commodo sodales ante, et sagittis massa. Nullam pulvinar tortor libero, eget faucibus urna posuere eget.
-
-Fusce condimentum tristique augue, eu iaculis justo venenatis in. Maecenas efficitur urna nec finibus auctor. Aenean at mauris arcu. Curabitur faucibus nec dolor vitae mollis. Nulla ut metus leo. Etiam finibus eros nec magna porttitor, eu cursus nulla semper. Aliquam mi felis, laoreet non metus sed, vehicula tincidunt justo. Cras ut suscipit justo. Mauris cursus augue vel quam tristique aliquam. Proin rutrum eros arcu, at pretium justo tincidunt placerat. Mauris sed pulvinar leo. Sed aliquam pretium dolor finibus luctus.
-Curabitur rhoncus mauris ut felis sagittis dictum. Quisque nec dui tincidunt, varius est at, molestie arcu. Pellentesque quis lectus eu enim mollis mollis. Sed elementum ex vel ex euismod rutrum. Quisque tempor sed tellus id laoreet. Proin fringilla mauris odio, ac condimentum neque lobortis ac. Sed id neque viverra, porta eros a, fermentum metus. Vivamus euismod vitae nulla vitae malesuada. Proin in neque nec lectus dapibus vestibulum. Nam nisi justo, vestibulum ut lectus sed, maximus auctor turpis. Duis vulputate eget augue at aliquet. Sed gravida maximus luctus. Mauris sed facilisis neque. Nullam enim metus, mattis a libero quis, ullamcorper posuere mauris.
-
-In at metus sodales, sagittis mauris sed, vehicula massa. Quisque in diam posuere, aliquam mi id, semper est. Phasellus tristique, massa vel posuere congue, est augue ullamcorper est, at porttitor lorem augue eget ante. Morbi magna justo, viverra vel tellus vel, blandit fringilla orci. Sed non dignissim augue, nec dapibus purus. Praesent cursus ornare risus, placerat aliquet neque. Ut in gravida metus, vitae vestibulum arcu. Vivamus fermentum eget urna quis porta. Cras commodo sodales ante, et sagittis massa. Nullam pulvinar tortor libero, eget faucibus urna posuere eget.
-
-Fusce condimentum tristique augue, eu iaculis justo venenatis in. Maecenas efficitur urna nec finibus auctor. Aenean at mauris arcu. Curabitur faucibus nec dolor vitae mollis. Nulla ut metus leo. Etiam finibus eros nec magna porttitor, eu cursus nulla semper. Aliquam mi felis, laoreet non metus sed, vehicula tincidunt justo. Cras ut suscipit justo. Mauris cursus augue vel quam tristique aliquam. Proin rutrum eros arcu, at pretium justo tincidunt placerat. Mauris sed pulvinar leo. Sed aliquam pretium dolor finibus luctus.
-
-
+\input{./contenido/descripcion.tex}
+\newpage
+\input{./contenido/grupo.tex}
+\newpage
+\input{./contenido/desarrollo.tex}
+\newpage
+\input{./contenido/anexo.tex}
+\newpage
+\input{./contenido/documentos.tex}
 \end{document}

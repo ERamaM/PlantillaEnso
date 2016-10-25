@@ -1,2 +1,0 @@
-\select@language {spanish}
-\contentsline {section}{\numberline {1}You are an idiot}{4}{section.1}
